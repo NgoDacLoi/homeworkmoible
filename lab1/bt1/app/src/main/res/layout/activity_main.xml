@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_weight="1">
+
+        <ImageView
+            android:id="@+id/imageAndroid"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:src="@drawable/download"
+            />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_weight="1">
+
+        <Button
+            android:id="@+id/new_game"
+            android:text="new_game"
+            android:layout_width="250dp"
+            android:layout_height="60dp"
+            android:textSize="19sp"
+            android:lines="1"
+            android:padding="10dp"
+            android:layout_gravity="center"/>
+
+        <Button
+            android:id="@+id/Continue_Game"
+            android:text="Continue_Game"
+            android:layout_width="250dp"
+            android:layout_height="60dp"
+            android:textSize="19sp"
+            android:lines="1"
+            android:padding="10dp"
+            android:layout_gravity="center" />
+
+        <Button
+            android:id="@+id/Help_Game"
+            android:text="Help_Game"
+            android:layout_width="250dp"
+            android:layout_height="60dp"
+            android:textSize="19sp"
+            android:lines="1"
+            android:padding="10dp"
+            android:layout_gravity="center" />
+
+        <Button
+            android:id="@+id/Quick_Game"
+            android:text="Quick_Game"
+            android:layout_width="250dp"
+            android:layout_height="60dp"
+            android:textSize="19sp"
+            android:lines="1"
+            android:padding="10dp"
+            android:layout_gravity="center" />
+
+    </LinearLayout>
+
+</LinearLayout>
+
+
+
+
+
+
+
+
+
+
