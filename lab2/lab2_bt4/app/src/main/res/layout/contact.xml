@@ -89,6 +89,6 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="Finish"
-            android:id="@+id/back"/>
+            android:id="@+id/finish"/>
     </LinearLayout>
 </LinearLayout>

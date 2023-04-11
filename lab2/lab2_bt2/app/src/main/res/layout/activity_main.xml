@@ -1,97 +1,64 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/rlVar1"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical"
-    android:weightSum="1"
+    android:background="@color/green"
     tools:context=".MainActivity">
 
     <TextView
-        android:layout_width="fill_parent"
+        android:id="@+id/tvVar1"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Hello World, ContractActivity!"
-        />
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        android:layout_gravity="left">
-
-        <TextView
-            android:layout_width="118dp"
-            android:layout_height="200px"
-            android:layout_margin="2dp"
-            android:text="Name"
-            android:textSize="50px" />
-
-        <EditText
-            android:id="@+id/nameKey"
-            android:layout_width="195dp"
-            android:layout_height="200px"
-            android:layout_margin="2dp"
-            android:text="John"
-            android:textSize="50px" />
-
-    </LinearLayout>
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        android:layout_gravity="left">
-
-        <TextView
-            android:layout_width="118dp"
-            android:layout_height="200px"
-            android:layout_margin="2dp"
-            android:text="Email"
-            android:textSize="50px" />
-
-        <EditText
-            android:layout_width="195dp"
-            android:layout_height="200px"
-            android:layout_margin="2dp"
-            android:text="John@gmail.com"
-            android:textSize="50px"
-            android:id="@+id/emailKey"/>
-
-    </LinearLayout>
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        android:layout_gravity="left">
-
-        <TextView
-            android:layout_width="118dp"
-            android:layout_height="200px"
-            android:layout_margin="2dp"
-            android:text="Project"
-            android:textSize="50px" />
-
-        <EditText
-            android:layout_width="195dp"
-            android:layout_height="200px"
-            android:layout_margin="2dp"
-            android:text="Android game"
-            android:textSize="50px"
-            android:id="@+id/projectKey"/>
-
-    </LinearLayout>
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="240dp"
+        android:text="What would you like?"
+        android:textSize="30dp"
+        android:textStyle="bold" />
 
     <LinearLayout
-        android:layout_width="match_parent"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_below="@+id/tvVar1"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="60dp"
         android:orientation="horizontal"
-        android:layout_gravity="left">
+        android:padding="10dp">
+
         <Button
-            android:layout_width="match_parent"
+            android:id="@+id/btVar1"
+            android:layout_width="100dp"
             android:layout_height="wrap_content"
-            android:text="View Contact Information"
-            android:id="@+id/finish"
-            android:onClick="goToAnActivity"
+            android:padding="10dp"
+            android:text="Red"
+            android:textSize="15dp" />
 
-            />
+        <Button
+            android:id="@+id/btVar2"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:text="Yellow"
+            android:textSize="15dp" />
+
+        <Button
+            android:id="@+id/btVar3"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:text="blue"
+            android:textSize="15dp" />
+
+        <Button
+            android:id="@+id/btVar4"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:text="Grey"
+            android:textSize="15dp" />
+
     </LinearLayout>
-</LinearLayout>
+
+</RelativeLayout>

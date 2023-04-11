@@ -11,6 +11,7 @@ import android.widget.TextView;
 public class ViewContactInfoActivity extends Activity {
 
 
+
     TextView txtNameValue;
     TextView txtEmailValue;
     TextView txtProjectValue;
@@ -28,12 +29,12 @@ public class ViewContactInfoActivity extends Activity {
         txtEmailValue = findViewById(R.id.emailValue);
         txtProjectValue = findViewById(R.id.projectvalue);
 
-        finishBtn = findViewById(R.id.back);
+        finishBtn = findViewById(R.id.finish);
         finishBtn.setOnClickListener(mClickFinishListener);
 
         Bundle bundle = getIntent().getExtras();
         String name = bundle.getString("nameKey");
-        String mail = bundle.getString("mailKey");
+        String mail = bundle.getString("emailKey");
         String project = bundle.getString("projectKey");
 
         txtNameValue.setText(name);
@@ -41,7 +42,8 @@ public class ViewContactInfoActivity extends Activity {
         txtProjectValue.setText(project);
 
     }
-    private final View.OnClickListener mClickFinishListener = new View.OnClickListener() {
+    private final View.OnClickListener mClickFinishListener = new View.OnClickListener()
+    {
         public void onClick(View v) {
             finish();
         }
