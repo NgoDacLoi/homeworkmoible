@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">lab4</string>
+    <string name="read_data">read_data</string>
+    <string name="write_data">write_data</string>
+</resources>
