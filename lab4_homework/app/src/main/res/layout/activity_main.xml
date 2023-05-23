@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/image"
+        android:layout_width="wrap_content"
+        android:layout_height="119dp"
+        android:adjustViewBounds="true"
+        android:scaleType="fitCenter"
+        android:src="@drawable/hinh"
+        android:layout_alignParentLeft="true"
+        />
+
+    <Button
+        android:id="@+id/change"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/phone"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="-495dp"
+        android:layout_marginRight="6dp"
+
+        android:text="@string/change"
+        android:textSize="25sp" />
+
+    <TextView
+        android:id="@+id/viewphone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="292dp"
+        android:text="phone"
+        android:textSize="25sp"
+        android:layout_below="@+id/image"
+
+        />
+
+    <TextView
+        android:id="@+id/viewmail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:text="mail"
+        android:textSize="25sp"
+        android:layout_below="@+id/name"
+
+        />
+
+    <TextView
+        android:id="@+id/viewname"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/image"
+        android:text="Name"
+        android:textSize="25sp" />
+
+    <EditText
+        android:id="@+id/mail"
+        android:layout_width="395dp"
+        android:layout_height="90dp"
+        android:layout_below="@+id/viewmail" />
+
+    <EditText
+        android:id="@+id/phone"
+        android:layout_width="395dp"
+        android:layout_height="90dp"
+        android:layout_below="@+id/viewphone" />
+
+
+    <EditText
+        android:id="@+id/name"
+        android:layout_width="395dp"
+        android:layout_height="90dp"
+        android:layout_below="@+id/viewname"
+        />
+
+    <Button
+        android:id="@+id/save"
+        android:layout_width="191dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/radio2"
+        android:text="@string/save"
+        android:layout_alignParentLeft="true"
+        android:textSize="25sp" />
+    <Button
+        android:id="@+id/cancel"
+        android:layout_width="191dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/radio1"
+        android:text="@string/cancel"
+        android:textSize="25sp"
+        android:layout_alignParentRight="true"
+
+       />
+    <TextView
+        android:id="@+id/gender"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Gender"
+        android:layout_below="@+id/phone"
+        android:textSize="25sp"
+
+        />
+    <RadioButton
+        android:id="@+id/radio1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/gender"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="187dp"
+        android:layout_marginTop="-1dp"
+        android:text="@string/male"
+        android:textSize="20sp"
+        android:onClick="radio1"
+
+        />
+
+
+    <RadioButton android:id="@+id/radio2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/female"
+        android:layout_below="@+id/gender"
+        android:layout_alignParentLeft="true"
+        android:textSize="20sp"
+        android:onClick="radio2"
+        />
+
+
+</RelativeLayout>

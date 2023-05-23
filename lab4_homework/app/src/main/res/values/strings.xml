@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">lab4</string>
+    <string name="cancel">cancel</string>
+    <string name="save">save</string>
+    <string name="change">change</string>
+    <string name="female">female</string>
+    <string name="male">male</string>
+
+</resources>
