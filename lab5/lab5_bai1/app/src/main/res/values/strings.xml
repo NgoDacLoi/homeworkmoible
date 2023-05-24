@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">lab5</string>
+    <string name="start_task">start_task</string>
+    <string name="ready_to_start">ready_to_start</string>
+    <string name="napping">"Napping…"</string>
+
+</resources>
